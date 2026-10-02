@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair By Angel | Premier Hair Stylist Oshawa & Whitby, ON</title>
+    <meta name="description" content="Hair By Angel - Professional Hair Stylist in Oshawa & Whitby specializing in Blonding, Balayage, Precision & Razor Cutting, and Bonded Hair Extensions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        salon: {
+                            gold: '#c5a059',
+                            'gold-light': '#e8d3a7',
+                            'gold-dark': '#9e7b39',
+                            champagne: '#f8f4ee',
+                            rose: '#faf3f0',
+                            dark: '#181616',
+                            charcoal: '#2a2625',
+                            muted: '#736d6b',
+                            border: '#e8e2dc'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -10px rgba(197, 160, 89, 0.15)',
+                        'elevated': '0 20px 40px -15px rgba(0, 0, 0, 0.08)',
+                        'glow': '0 0 25px rgba(197, 160, 89, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(248, 244, 238, 0.95) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(250, 243, 240, 0.9) 100%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #b88e3e 0%, #d4af37 50%, #9e7b39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #c5a059 0%, #d8b46d 100%);
+        }
+        .gold-bg-gradient:hover {
+            background: linear-gradient(135deg, #b38e47 0%, #c5a059 100%);
+        }
+        .dark-gold-card {
+            background: linear-gradient(145deg, #221f1e 0%, #181616 100%);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f4ee;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5a059;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-salon-champagne text-salon-dark antialiased selection:bg-salon-gold/20 selection:text-salon-gold-dark min-h-screen flex flex-col">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-salon-dark text-salon-champagne py-2 px-4 text-xs md:text-sm text-center font-light border-b border-salon-gold/20 flex justify-between items-center max-w-full overflow-hidden">
+        <div class="hidden md:flex items-center space-x-6 mx-auto">
+            <span class="flex items-center"><i class="fa-solid fa-location-dot text-salon-gold mr-2 text-xs"></i> 167 Simcoe St S, Oshawa/Whitby, ON</span>
+            <span class="text-salon-gold/40">•</span>
+            <span class="flex items-center"><i class="fa-solid fa-phone text-salon-gold mr-2 text-xs"></i> +1 905-999-1277</span>
+            <span class="text-salon-gold/40">•</span>
+            <span class="flex items-center"><i class="fa-brands fa-facebook text-salon-gold mr-2 text-xs"></i> @hairbyangel7</span>
+        </div>
+        <div class="md:hidden mx-auto flex items-center justify-center space-x-3 text-xs">
+            <span><i class="fa-solid fa-scissors text-salon-gold mr-1"></i> Oshawa & Whitby Premier Hair Studio</span>
+            <a href="tel:+19059991277" class="underline text-salon-gold font-medium">Call Now</a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 glass-header border-b border-salon-border/60 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-salon-gold/40 flex items-center justify-center bg-white shadow-sm group-hover:border-salon-gold transition-colors">
+                    <i class="fa-solid fa-crown text-salon-gold text-lg group-hover:scale-110 transition-transform"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-2xl font-bold tracking-wide text-salon-dark block leading-none">HAIR BY ANGEL</span>
+                    <span class="text-[10px] tracking-[0.25em] text-salon-gold font-medium uppercase block mt-1">Blonding & Extensions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">About</a>
+                <a href="#services" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">Services</a>
+                <a href="#gallery" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">Gallery</a>
+                <a href="#why-choose" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">Why Us</a>
+                <a href="#testimonials" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">Reviews</a>
+                <a href="#contact" class="text-salon-dark/80 hover:text-salon-gold transition-colors py-2 border-b-2 border-transparent hover:border-salon-gold">Contact</a>
+            </nav>
+
+            <!-- CTA & Mobile Trigger -->
+            <div class="flex items-center space-x-4">
+                <button onclick="openBookingModal()" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase text-white gold-bg-gradient shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-0.5">
+                    <i class="fa-regular fa-calendar-check mr-2 text-sm"></i>
+                    Book Appointment
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-salon-dark hover:text-salon-gold hover:bg-salon-rose focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-salon-border px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">About Angel</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">Services & Pricing</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">Signature Gallery</a>
+            <a href="#why-choose" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">Why Choose Us</a>
+            <a href="#testimonials" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">Client Testimonials</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-base font-medium text-salon-dark hover:text-salon-gold py-2">Location & Contact</a>
+            <div class="pt-4 border-t border-salon-border flex flex-col space-y-3">
+                <button onclick="openBookingModal(); toggleMobileMenu();" class="w-full text-center px-5 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-white gold-bg-gradient shadow-md">
+                    Book Appointment Online
+                </button>
+                <a href="tel:+19059991277" class="w-full text-center px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-salon-gold text-salon-gold">
+                    <i class="fa-solid fa-phone mr-2"></i> +1 905-999-1277
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-24 hero-gradient">
+        <!-- Background decorative elements -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-salon-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-80 h-80 bg-salon-rose/80 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal-on-scroll">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white border border-salon-gold/30 text-salon-gold-dark text-xs font-medium tracking-wide shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-salon-gold animate-pulse"></span>
+                        <span>Oshawa & Whitby’s Premier Hair Specialist</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-salon-dark tracking-tight leading-[1.15]">
+                        Beautiful Hair, <br class="hidden sm:inline" />
+                        <span class="gold-gradient-text italic font-normal">Beautifully You.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-salon-muted font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Step into a bespoke salon experience crafted around your unique style. Specializing in luxury Blonding, dimensional Balayage, precision cutting, and flawless Bonded Extensions in Oshawa & Whitby.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase text-white gold-bg-gradient shadow-soft hover:shadow-glow transition-all transform hover:-translate-y-0.5">
+                            Book Your Appointment
+                        </button>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase text-salon-dark border border-salon-dark/20 hover:border-salon-gold hover:text-salon-gold bg-white/80 transition-all text-center">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-8 border-t border-salon-border/80 grid grid-cols-3 gap-4 text-center lg:text-left max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-salon-dark">10+</div>
+                            <div class="text-xs text-salon-muted uppercase tracking-wider mt-0.5">Years Crafting</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-salon-dark">100%</div>
+                            <div class="text-xs text-salon-muted uppercase tracking-wider mt-0.5">Custom Color</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl font-bold text-salon-gold-dark flex items-center justify-center lg:justify-start">
+                                5.0 <i class="fa-solid fa-star text-xs ml-1 text-salon-gold"></i>
+                            </div>
+                            <div class="text-xs text-salon-muted uppercase tracking-wider mt-0.5">Client Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Banner -->
+                <div class="lg:col-span-5 relative reveal-on-scroll">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative frame box -->
+                        <div class="absolute inset-0 border-2 border-salon-gold/30 rounded-3xl transform translate-x-4 translate-y-4"></div>
+                        
+                        <!-- Main Hero Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-elevated bg-white border border-salon-border">
+                            <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Hair Styling Experience at Hair By Angel Salon" 
+                                 class="w-full h-[460px] sm:h-[520px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Overlay floating glass badge -->
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/60 shadow-lg flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-salon-rose flex items-center justify-center text-salon-gold flex-shrink-0">
+                                    <i class="fa-solid fa-sparkles text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-salon-dark uppercase tracking-wider">Bond Integrity Protection</div>
+                                    <div class="text-xs text-salon-muted">Premium luxury color formulas designed for long-term health</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Grid with unique photos -->
+                <div class="lg:col-span-5 relative reveal-on-scroll">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=800&auto=format&fit=crop" 
+                             alt="Angel Stylist Precision Cutting Hair" 
+                             class="rounded-2xl shadow-md h-64 sm:h-80 w-full object-cover border border-salon-border">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" 
+                             alt="Luxury Salon Aesthetics Interior" 
+                             class="rounded-2xl shadow-md h-64 sm:h-80 w-full object-cover mt-8 border border-salon-border">
+                    </div>
+                    
+                    <!-- Quote Badge -->
+                    <div class="absolute -bottom-6 right-4 sm:right-8 bg-salon-dark text-salon-champagne p-6 rounded-2xl max-w-xs shadow-xl hidden sm:block border border-salon-gold/30">
+                        <i class="fa-solid fa-quote-left text-salon-gold text-2xl mb-2 block"></i>
+                        <p class="text-xs italic leading-relaxed text-salon-champagne/90">
+                            "Hair isn't just about length or color—it's your ultimate personal signature."
+                        </p>
+                        <span class="block text-[11px] font-bold text-salon-gold tracking-widest uppercase mt-3">— Angel, Founder & Master Stylist</span>
+                    </div>
+                </div>
+
+                <!-- Right Text Column -->
+                <div class="lg:col-span-7 space-y-6 lg:pl-6 reveal-on-scroll">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">Personalized Styling Experience</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-salon-dark leading-tight">
+                            Crafting Bespoke Hair Transformations with Passion & Precision
+                        </h2>
+                    </div>
+
+                    <p class="text-salon-muted text-base leading-relaxed">
+                        Welcome to <strong>Hair By Angel</strong>, located in the heart of Oshawa/Whitby at 167 Simcoe Street South. Hair By Angel was built on the foundation that every client deserves dedicated 1-on-1 attention, transparent artistry, and an elevated experience from start to finish.
+                    </p>
+
+                    <p class="text-salon-muted text-base leading-relaxed">
+                        Whether you are aiming for seamless blonde balayage, dimensional tonal transformations, textured razor layers, or invisible bonded extensions—every service is custom tailored to your unique hair integrity, skin tone, and lifestyle.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-salon-rose/50 border border-salon-border/50">
+                            <div class="w-8 h-8 rounded-full bg-salon-gold/20 flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-salon-dark">One-on-One Attention</h4>
+                                <p class="text-xs text-salon-muted">No double-booking; your time in the chair is 100% focused on you.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-salon-rose/50 border border-salon-border/50">
+                            <div class="w-8 h-8 rounded-full bg-salon-gold/20 flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-salon-dark">Advanced Cutting Craft</h4>
+                                <p class="text-xs text-salon-muted">Mastery in Precision, Freehand, and Razor texturizing techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#services" class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-salon-gold-dark hover:text-salon-dark transition-colors">
+                            Explore Angel's Specialty Services <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-salon-champagne/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+                <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">Tailored Studio Menu</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-salon-dark">
+                    Specialized Hair Services
+                </h2>
+                <div class="w-16 h-0.5 bg-salon-gold mx-auto my-4"></div>
+                <p class="text-salon-muted text-base">
+                    Every service includes a detailed personal consultation, bond-building treatment options, and professional styling guidance.
+                </p>
+            </div>
+
+            <!-- Service Grid (7 Services, all distinct imagery) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Blonding -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b4?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Blonding & Platinum Services" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-salon-dark/80 backdrop-blur-sm text-salon-champagne text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                                High Demand
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Blonding</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Bespoke</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Platinum transformations, global blonding, root melts, and delicate babylights engineered to preserve strength and produce creamy tones.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Global & Full Head Foilayage</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Custom Toning & Gloss Refinements</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Olaplex Bond Protection Included</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Blonding')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Blonding Session
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Balayage -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1523263685509-57c1d0de8121?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Balayage Dimensional Coloring" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-salon-gold text-white text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Signature
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Balayage</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Lived-In</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Hand-painted dimensional highlight art created for effortless growth, low-maintenance longevity, and sun-kissed brightness.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Freehand Clay Painting</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Soft Seamless Root Blending</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Caramel, Honey & Vanilla Tones</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Balayage')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Balayage Session
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Hair Coloring -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584297091622-af8e5fd80f1d?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Rich Hair Coloring & Toning" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Hair Coloring</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Rich Tones</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Full-spectrum gray coverage, rich single-process brunettes, copper tones, vivid hues, and gloss shine enhancements.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Root Touch-up & Seamless Blend</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Gloss & Tonal Correction</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Deep Moisture & Scalp Care</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Hair Coloring')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Color Consultation
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: Precision Cutting -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1522337094846-8a83811221f6?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Precision Hair Cut" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Precision Cutting</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Sculpted</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Architecturally sound, crisp bobs, clean perimeter cuts, and tailored long layers designed to align with your facial structure.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Sharp Geometric Lines</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Face-Framing Layers</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Signature Blowout & Style</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Precision Cutting')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Precision Cut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5: Freehand Cutting -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Freehand Hair Sculpting" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Freehand Cutting</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Organic Flow</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Intuitive dry-carving technique that shapes hair according to natural growth patterns, wave direction, and density.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Custom Weight Removal</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Natural Crown Movement</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Low-Maintenance Air Dry Finish</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Freehand Cutting')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Freehand Cut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6: Razor Cutting -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Razor Cutting & Feathering" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Razor Cutting</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Textured</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Soft razor feathering that sculpts airy fringe, piecey curtain bangs, and lived-in textured shags with fluid movement.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Feathered Ends & Airy Feel</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Curtain Bangs & Shag Layers</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Weightless Volume Enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Razor Cutting')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Razor Cut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 7: Bonded Hair Extensions -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-300 border border-salon-border/80 group flex flex-col justify-between reveal-on-scroll md:col-span-2 lg:col-span-1 mx-auto w-full">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Bonded Hair Extensions" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-salon-dark text-salon-gold text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Specialty
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-bold text-salon-dark">Bonded Hair Extensions</h3>
+                                <span class="text-xs font-bold text-salon-gold-dark bg-salon-rose px-2.5 py-1 rounded-md">Volume & Length</span>
+                            </div>
+                            <p class="text-salon-muted text-xs leading-relaxed mb-4">
+                                Seamless keratin fusion and micro-bonded extension applications for instant density, length, and undetectable blending.
+                            </p>
+                            <ul class="space-y-2 text-xs text-salon-dark mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> 100% Premium Human Hair</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Custom Color Matching & Placement</li>
+                                <li class="flex items-center"><i class="fa-solid fa-sparkles text-salon-gold mr-2"></i> Long-Lasting & Zero Tension Damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <button onclick="openBookingModal('Bonded Hair Extensions')" class="w-full py-3 rounded-xl border border-salon-gold text-salon-dark hover:bg-salon-dark hover:text-white hover:border-salon-dark transition-all text-xs font-bold tracking-wider uppercase">
+                            Book Extension Consultation
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (All photos updated to unique imagery) -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal-on-scroll">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">Portfolio</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-salon-dark">
+                        Signature Transformations
+                    </h2>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-wrap gap-2 text-xs font-medium" id="gallery-filters">
+                    <button onclick="filterGallery('all')" class="gallery-btn active px-4 py-2 rounded-full bg-salon-dark text-white shadow-sm transition-all">All Work</button>
+                    <button onclick="filterGallery('blonding')" class="gallery-btn px-4 py-2 rounded-full bg-salon-rose text-salon-dark hover:bg-salon-gold/20 transition-all">Blonding & Balayage</button>
+                    <button onclick="filterGallery('cutting')" class="gallery-btn px-4 py-2 rounded-full bg-salon-rose text-salon-dark hover:bg-salon-gold/20 transition-all">Precision & Razor Cuts</button>
+                    <button onclick="filterGallery('extensions')" class="gallery-btn px-4 py-2 rounded-full bg-salon-rose text-salon-dark hover:bg-salon-gold/20 transition-all">Bonded Extensions</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid (8 Items with distinct photography) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item blonding group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1200&auto=format&fit=crop', 'Ice Pearl Dimensional Balayage', 'Blonding Specialty')">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop" 
+                         alt="Dimensional Ice Blonde Balayage" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Balayage & Gloss</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Ice Pearl Dimensional Balayage</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Lightened with bond protection & cool gloss.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item blonding group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1200&auto=format&fit=crop', 'Warm Honey & Espresso Blend', 'Hand-Painted Balayage')">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" 
+                         alt="Caramel Honey Balayage Hair" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Hand-Painted Balayage</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Warm Honey & Espresso Blend</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Lived-in low maintenance dimension.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item extensions group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200&auto=format&fit=crop', '22 Micro-Bond Length Transformation', 'Keratin Extensions')">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop" 
+                         alt="Seamless Bonded Hair Extensions" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Keratin Extensions</span>
+                        <h4 class="text-white font-serif text-lg font-bold">22” Micro-Bond Length</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Seamless color matching & natural volume.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item cutting group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1200&auto=format&fit=crop', 'Sleek Angled Precision Bob', 'Precision Cut')">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=800&auto=format&fit=crop" 
+                         alt="Precision Cut Bob" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Precision Cut</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Sleek Angled Precision Bob</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Architectural structure with glossy shine.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item cutting group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop', 'Feathered Shag & Air Layers', 'Razor Cutting')">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop" 
+                         alt="Textured Razor Layering" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Razor Cutting</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Feathered Shag & Air Layers</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Organic movement for weightless volume.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item blonding group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=1200&auto=format&fit=crop', 'Sun-Drenched Platinum Melt', 'Blonding Specialty')">
+                    <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=800&auto=format&fit=crop" 
+                         alt="Platinum Foilayage" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Blonding Specialty</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Sun-Drenched Platinum Melt</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">High-lift blonding with zero band compromise.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item blonding group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop', 'Hydrated Platinum Gloss Treatment', 'Blonding Care')">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800&auto=format&fit=crop" 
+                         alt="Hydrated Platinum Gloss" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Blonding Care</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Hydrated Platinum Gloss</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Deep conditioning and brass neutralization.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item extensions group relative rounded-2xl overflow-hidden shadow-sm h-80 cursor-pointer reveal-on-scroll" onclick="openLightbox('https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=1200&auto=format&fit=crop', 'Full Body 24 Inch Bonded Extensions', 'Keratin Fusion')">
+                    <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=800&auto=format&fit=crop" 
+                         alt="Keratin Fusion Extensions" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark/90 via-salon-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] font-bold text-salon-gold tracking-widest uppercase">Keratin Fusion</span>
+                        <h4 class="text-white font-serif text-lg font-bold">24” Seamless Density Blend</h4>
+                        <p class="text-salon-champagne/80 text-xs mt-1">Undetectable bonds with full natural movement.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section (Now with dedicated top cover images for every single box) -->
+    <section id="why-choose" class="py-20 bg-salon-dark text-salon-champagne relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+                <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">The Difference</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                    Why Choose Hair By Angel?
+                </h2>
+                <div class="w-16 h-0.5 bg-salon-gold mx-auto my-4"></div>
+                <p class="text-salon-champagne/70 text-sm">
+                    Dedicated craft, premium luxury products, and an attentive personal environment right in Oshawa/Whitby.
+                </p>
+            </div>
+
+            <!-- 5 Key Pillars Grid (Every card filled with image cover header) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                
+                <!-- Box 1 -->
+                <div class="dark-gold-card rounded-2xl border border-salon-gold/20 hover:border-salon-gold/60 transition-all overflow-hidden flex flex-col justify-between reveal-on-scroll group">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?q=80&w=600&auto=format&fit=crop" 
+                             alt="Personalized Service" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#181616] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center">
+                        <div class="w-10 h-10 rounded-full bg-salon-gold/20 border border-salon-gold/40 flex items-center justify-center text-salon-gold text-lg mx-auto -mt-10 relative z-10 bg-salon-dark mb-3">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3 class="font-serif text-base font-bold text-white mb-2">Personalized Service</h3>
+                        <p class="text-xs text-salon-champagne/70 leading-relaxed">
+                            Exclusive 1-on-1 consultations focused solely on your individual hair goals without rush.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="dark-gold-card rounded-2xl border border-salon-gold/20 hover:border-salon-gold/60 transition-all overflow-hidden flex flex-col justify-between reveal-on-scroll group">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=600&auto=format&fit=crop" 
+                             alt="Detailed Cutting" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#181616] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center">
+                        <div class="w-10 h-10 rounded-full bg-salon-gold/20 border border-salon-gold/40 flex items-center justify-center text-salon-gold text-lg mx-auto -mt-10 relative z-10 bg-salon-dark mb-3">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <h3 class="font-serif text-base font-bold text-white mb-2">Detailed Cutting</h3>
+                        <p class="text-xs text-salon-champagne/70 leading-relaxed">
+                            Mastery in precision geometry, freehand carving, and razor texturizing techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="dark-gold-card rounded-2xl border border-salon-gold/20 hover:border-salon-gold/60 transition-all overflow-hidden flex flex-col justify-between reveal-on-scroll group">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1523263685509-57c1d0de8121?q=80&w=600&auto=format&fit=crop" 
+                             alt="Modern Coloring" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#181616] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center">
+                        <div class="w-10 h-10 rounded-full bg-salon-gold/20 border border-salon-gold/40 flex items-center justify-center text-salon-gold text-lg mx-auto -mt-10 relative z-10 bg-salon-dark mb-3">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="font-serif text-base font-bold text-white mb-2">Modern Coloring</h3>
+                        <p class="text-xs text-salon-champagne/70 leading-relaxed">
+                            Expert blonding, lived-in balayage, and custom gloss formulations for seamless shine.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="dark-gold-card rounded-2xl border border-salon-gold/20 hover:border-salon-gold/60 transition-all overflow-hidden flex flex-col justify-between reveal-on-scroll group">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=600&auto=format&fit=crop" 
+                             alt="Quality Products" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#181616] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center">
+                        <div class="w-10 h-10 rounded-full bg-salon-gold/20 border border-salon-gold/40 flex items-center justify-center text-salon-gold text-lg mx-auto -mt-10 relative z-10 bg-salon-dark mb-3">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="font-serif text-base font-bold text-white mb-2">Quality Products</h3>
+                        <p class="text-xs text-salon-champagne/70 leading-relaxed">
+                            We utilize bond builders and professional luxury line formulas to safeguard your hair health.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Box 5 -->
+                <div class="dark-gold-card rounded-2xl border border-salon-gold/20 hover:border-salon-gold/60 transition-all overflow-hidden flex flex-col justify-between reveal-on-scroll group">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?q=80&w=600&auto=format&fit=crop" 
+                             alt="Attention to Detail" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#181616] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center">
+                        <div class="w-10 h-10 rounded-full bg-salon-gold/20 border border-salon-gold/40 flex items-center justify-center text-salon-gold text-lg mx-auto -mt-10 relative z-10 bg-salon-dark mb-3">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="font-serif text-base font-bold text-white mb-2">Attention to Detail</h3>
+                        <p class="text-xs text-salon-champagne/70 leading-relaxed">
+                            From root shading to seamless extension bonds, perfection is in every single touch.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-salon-champagne/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+                <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">Client Love</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-salon-dark">
+                    Kind Words From Local Clients
+                </h2>
+                <div class="w-16 h-0.5 bg-salon-gold mx-auto my-4"></div>
+                <p class="text-salon-muted text-xs uppercase tracking-wider">Verified Reviews & Social Feedback</p>
+            </div>
+
+            <!-- Review Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-salon-border/80 flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="flex text-salon-gold text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-salon-dark text-sm leading-relaxed italic mb-6">
+                            "Angel is an absolute magician with blonding! I was so scared of brassiness or damage, but my balayage turned out so smooth, healthy, and natural. Best stylist in Whitby/Oshawa!"
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-salon-border/40">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-salon-gold/20 flex items-center justify-center font-bold text-salon-gold-dark text-xs">
+                                SM
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-salon-dark">Sarah M.</h4>
+                                <span class="text-xs text-salon-muted">Oshawa Client • Balayage</span>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-facebook text-salon-gold/50 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-salon-border/80 flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="flex text-salon-gold text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-salon-dark text-sm leading-relaxed italic mb-6">
+                            "I got bonded hair extensions done by Angel and I am obsessed. You cannot see the bonds at all, and the color blend with my natural hair is completely seamless."
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-salon-border/40">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-salon-gold/20 flex items-center justify-center font-bold text-salon-gold-dark text-xs">
+                                JT
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-salon-dark">Jessica T.</h4>
+                                <span class="text-xs text-salon-muted">Whitby Client • Extensions</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-heart text-salon-gold/50 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-salon-border/80 flex flex-col justify-between reveal-on-scroll">
+                    <div>
+                        <div class="flex text-salon-gold text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-salon-dark text-sm leading-relaxed italic mb-6">
+                            "Angel’s razor cut gave my flat hair so much volume and movement! Her attention to detail and personal approach made the entire appointment feel like a luxury retreat."
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-salon-border/40">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-salon-gold/20 flex items-center justify-center font-bold text-salon-gold-dark text-xs">
+                                AK
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-salon-dark">Amanda K.</h4>
+                                <span class="text-xs text-salon-muted">Oshawa Client • Razor Cut</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-circle-check text-salon-gold/50 text-xl"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Banner CTA -->
+    <section class="py-20 relative overflow-hidden bg-salon-dark text-white">
+        <!-- Ambient background image overlay -->
+        <div class="absolute inset-0 z-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-salon-dark via-salon-dark/90 to-salon-dark/70"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8 reveal-on-scroll">
+            <span class="inline-block text-xs font-bold tracking-[0.25em] text-salon-gold uppercase border border-salon-gold/30 px-4 py-1.5 rounded-full">
+                Ready For Your Hair Goal Transformation?
+            </span>
+            
+            <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                Schedule Your Personalized Hair Appointment Today
+            </h2>
+            
+            <p class="text-salon-champagne/80 text-base max-w-2xl mx-auto font-light leading-relaxed">
+                Appointments filling quickly. Book online directly or get in touch for custom consultations on extensions and color corrections.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <button onclick="openBookingModal()" class="w-full sm:w-auto px-10 py-4 rounded-full text-xs font-bold tracking-widest uppercase text-salon-dark bg-salon-gold hover:bg-salon-gold-light transition-all shadow-glow transform hover:-translate-y-0.5">
+                    Book Online Now
+                </button>
+                <a href="tel:+19059991277" class="w-full sm:w-auto px-10 py-4 rounded-full text-xs font-bold tracking-widest uppercase text-white border border-white/30 hover:border-salon-gold hover:text-salon-gold transition-all text-center">
+                    <i class="fa-solid fa-phone mr-2"></i> Call +1 905-999-1277
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Details Box -->
+                <div class="lg:col-span-5 space-y-8 reveal-on-scroll">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-salon-gold uppercase block mb-2">Get In Touch</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-salon-dark">
+                            Location & Studio Info
+                        </h2>
+                        <p class="text-salon-muted text-sm mt-3 leading-relaxed">
+                            Conveniently located at Simcoe Street South servicing Oshawa, Whitby, and the Durham region.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-salon-rose flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-salon-dark uppercase tracking-wider">Studio Address</h4>
+                                <p class="text-sm text-salon-muted mt-1">167 Simcoe Street South</p>
+                                <p class="text-sm text-salon-muted">Oshawa/Whitby, ON, L1H 4G8</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-salon-rose flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-salon-dark uppercase tracking-wider">Direct Call / Text</h4>
+                                <p class="text-sm text-salon-muted mt-1">
+                                    <a href="tel:+19059991277" class="hover:text-salon-gold font-medium">+1 905-999-1277</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-salon-rose flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-salon-dark uppercase tracking-wider">Email Inquiry</h4>
+                                <p class="text-sm text-salon-muted mt-1">
+                                    <a href="mailto:angel.doesmyhair@outlook.com" class="hover:text-salon-gold font-medium">angel.doesmyhair@outlook.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-salon-rose flex items-center justify-center text-salon-gold-dark flex-shrink-0 mt-1">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-salon-dark uppercase tracking-wider">Facebook Page</h4>
+                                <p class="text-sm text-salon-muted mt-1">
+                                    <a href="https://facebook.com/hairbyangel7" target="_blank" class="hover:text-salon-gold font-medium">facebook.com/hairbyangel7</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hours Box -->
+                    <div class="p-6 rounded-2xl bg-salon-champagne border border-salon-border">
+                        <h4 class="font-serif text-lg font-bold text-salon-dark mb-3">Operating Hours</h4>
+                        <ul class="text-xs space-y-2 text-salon-muted">
+                            <div class="flex justify-between py-1 border-b border-salon-border/60">
+                                <span>Tuesday – Friday</span>
+                                <span class="font-semibold text-salon-dark">10:00 AM – 7:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-1 border-b border-salon-border/60">
+                                <span>Saturday</span>
+                                <span class="font-semibold text-salon-dark">9:00 AM – 5:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-1">
+                                <span>Sunday – Monday</span>
+                                <span class="font-semibold text-salon-gold">By Special Appointment</span>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form Column -->
+                <div class="lg:col-span-7 reveal-on-scroll">
+                    <div class="bg-salon-rose/40 p-8 sm:p-10 rounded-3xl border border-salon-border shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-salon-dark mb-2">Send Angel a Message</h3>
+                        <p class="text-xs text-salon-muted mb-6">Have a question about hair length, color history, or booking? Send an inquiry below.</p>
+
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Your Full Name *</label>
+                                    <input type="text" required placeholder="e.g. Sarah Miller" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-white text-sm focus:outline-none focus:border-salon-gold">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Phone Number *</label>
+                                    <input type="tel" required placeholder="(905) 000-0000" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-white text-sm focus:outline-none focus:border-salon-gold">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Email Address *</label>
+                                <input type="email" required placeholder="your.email@example.com" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-white text-sm focus:outline-none focus:border-salon-gold">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Service Of Interest</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-salon-border bg-white text-sm focus:outline-none focus:border-salon-gold">
+                                    <option>Select a specialty service...</option>
+                                    <option>Blonding / Platinum</option>
+                                    <option>Balayage & Dimensional Color</option>
+                                    <option>Precision Cut</option>
+                                    <option>Freehand Cut</option>
+                                    <option>Razor Texturizing Cut</option>
+                                    <option>Bonded Hair Extensions</option>
+                                    <option>General Consultation / Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Your Hair Goals / Message *</label>
+                                <textarea rows="4" required placeholder="Tell Angel about your hair goals, current hair color, or preferred timing..." class="w-full px-4 py-3 rounded-xl border border-salon-border bg-white text-sm focus:outline-none focus:border-salon-gold"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl text-xs font-bold tracking-widest uppercase text-white gold-bg-gradient shadow-soft hover:shadow-glow transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-salon-dark text-salon-champagne pt-16 pb-8 border-t border-salon-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-salon-gold/10">
+                
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-full border border-salon-gold/40 flex items-center justify-center bg-white/5">
+                            <i class="fa-solid fa-crown text-salon-gold text-base"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold tracking-wide text-white">HAIR BY ANGEL</span>
+                    </div>
+                    <p class="text-xs text-salon-champagne/70 leading-relaxed font-light">
+                        Luxury Blonding, Balayage, Precision Razor Cutting & Bonded Hair Extensions in Oshawa and Whitby, Ontario.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://facebook.com/hairbyangel7" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-salon-gold hover:bg-salon-gold hover:text-salon-dark transition-all">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="tel:+19059991277" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-salon-gold hover:bg-salon-gold hover:text-salon-dark transition-all">
+                            <i class="fa-solid fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:angel.doesmyhair@outlook.com" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-salon-gold hover:bg-salon-gold hover:text-salon-dark transition-all">
+                            <i class="fa-solid fa-envelope text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-salon-champagne/80">
+                        <li><a href="#about" class="hover:text-salon-gold transition-colors">About Angel</a></li>
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Services & Pricing</a></li>
+                        <li><a href="#gallery" class="hover:text-salon-gold transition-colors">Transformation Portfolio</a></li>
+                        <li><a href="#why-choose" class="hover:text-salon-gold transition-colors">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-salon-gold transition-colors">Client Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-salon-gold transition-colors">Location & Hours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4">Specialties</h4>
+                    <ul class="space-y-2 text-xs text-salon-champagne/80">
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Blonding & Babylights</a></li>
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Lived-In Balayage</a></li>
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Precision Bobs & Cuts</a></li>
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Freehand & Razor Cutting</a></li>
+                        <li><a href="#services" class="hover:text-salon-gold transition-colors">Keratin Bonded Extensions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Location -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4">Studio Location</h4>
+                    <address class="not-italic text-xs text-salon-champagne/80 space-y-2">
+                        <p><i class="fa-solid fa-location-dot text-salon-gold mr-2"></i> 167 Simcoe Street South</p>
+                        <p class="pl-5">Oshawa/Whitby, ON, L1H 4G8</p>
+                        <p class="pt-2"><i class="fa-solid fa-phone text-salon-gold mr-2"></i> +1 905-999-1277</p>
+                        <p><i class="fa-solid fa-envelope text-salon-gold mr-2"></i> angel.doesmyhair@outlook.com</p>
+                        <p><i class="fa-brands fa-facebook text-salon-gold mr-2"></i> hairbyangel7</p>
+                    </address>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-salon-champagne/60 space-y-4 sm:space-y-0">
+                <p>&copy; <span id="year">2026</span> Hair By Angel. All Rights Reserved.</p>
+                <p>Designed for Oshawa & Whitby, Ontario</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-salon-dark/80 backdrop-blur-sm transition-all duration-300">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-salon-border max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button -->
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-salon-muted hover:text-salon-dark p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-salon-rose border border-salon-gold/30 flex items-center justify-center text-salon-gold mx-auto mb-3">
+                    <i class="fa-regular fa-calendar-check text-xl"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-salon-dark">Book Your Appointment</h3>
+                <p class="text-xs text-salon-muted mt-1">Hair By Angel • 167 Simcoe St S, Oshawa/Whitby</p>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Select Service *</label>
+                    <select id="modal-service-select" required class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                        <option value="">Choose a service...</option>
+                        <option value="Blonding">Blonding & Babylights</option>
+                        <option value="Balayage">Balayage / Dimensional Color</option>
+                        <option value="Hair Coloring">Hair Coloring & Toning Gloss</option>
+                        <option value="Precision Cutting">Precision Cutting & Blowout</option>
+                        <option value="Freehand Cutting">Freehand Natural Cut</option>
+                        <option value="Razor Cutting">Freehand & Razor Cutting</option>
+                        <option value="Bonded Hair Extensions">Bonded Hair Extensions Consultation</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Preferred Date *</label>
+                        <input type="date" id="booking-date" required class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Preferred Time *</label>
+                        <select required class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                            <option value="">Select time...</option>
+                            <option>10:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>2:00 PM</option>
+                            <option>4:00 PM</option>
+                            <option>5:30 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Your Full Name *</label>
+                    <input type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Phone Number *</label>
+                        <input type="tel" required placeholder="(905) 000-0000" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Email Address *</label>
+                        <input type="email" required placeholder="your.email@example.com" class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-salon-dark uppercase mb-1">Special Notes / Hair Length</label>
+                    <textarea rows="2" placeholder="Any previous color treatments, desired length, or preferences..." class="w-full px-4 py-3 rounded-xl border border-salon-border bg-salon-champagne/30 text-sm focus:outline-none focus:border-salon-gold"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl text-xs font-bold tracking-widest uppercase text-white gold-bg-gradient shadow-soft hover:shadow-glow transition-all">
+                    Confirm Appointment Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Image Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-salon-dark/90 backdrop-blur-md transition-all duration-300">
+        <div class="relative max-w-4xl w-full bg-salon-dark rounded-3xl overflow-hidden border border-salon-gold/30 shadow-2xl flex flex-col md:flex-row">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-salon-gold hover:text-salon-dark transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="md:w-2/3 bg-black flex items-center justify-center min-h-[300px] md:min-h-[500px]">
+                <img id="lightbox-img" src="" alt="Transformation Detail" class="max-h-[80vh] w-full object-contain">
+            </div>
+            <div class="md:w-1/3 p-8 flex flex-col justify-center space-y-4 text-white bg-salon-dark">
+                <span id="lightbox-tag" class="text-xs font-bold text-salon-gold tracking-widest uppercase">Specialty</span>
+                <h3 id="lightbox-title" class="font-serif text-2xl font-bold">Transformation</h3>
+                <p class="text-xs text-salon-champagne/80 leading-relaxed">
+                    Custom tailored transformation by Angel utilizing bond integrity protection and premium hair care formulas.
+                </p>
+                <div class="pt-4">
+                    <button onclick="closeLightbox(); openBookingModal();" class="w-full py-3 rounded-xl text-xs font-bold tracking-wider uppercase text-salon-dark bg-salon-gold hover:bg-salon-gold-light transition-all">
+                        Book Similar Look
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-salon-dark text-white px-6 py-4 rounded-2xl shadow-2xl border border-salon-gold flex items-center space-x-3 transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-salon-gold text-xl" id="toast-icon"></i>
+        <div>
+            <div id="toast-title" class="text-xs font-bold uppercase text-salon-gold">Success</div>
+            <div id="toast-msg" class="text-xs text-salon-champagne">Your request has been received.</div>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Set dynamic current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        // Booking Modal Management
+        function openBookingModal(serviceName = '') {
+            const modal = document.getElementById('booking-modal');
+            const select = document.getElementById('modal-service-select');
+            
+            if (serviceName) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value.toLowerCase().includes(serviceName.toLowerCase())) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('booking-date').min = today;
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        // Lightbox Functions
+        function openLightbox(imgSrc, title, tag) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-tag').textContent = tag;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // Close modal when clicking backdrop
+        document.getElementById('booking-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeBookingModal();
+        });
+
+        document.getElementById('lightbox-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        // Filter Gallery Logic
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-salon-dark', 'text-white');
+                btn.classList.add('bg-salon-rose', 'text-salon-dark');
+            });
+
+            event.currentTarget.classList.remove('bg-salon-rose', 'text-salon-dark');
+            event.currentTarget.classList.add('active', 'bg-salon-dark', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Show Toast Function
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-title').textContent = title;
+            document.getElementById('toast-msg').textContent = message;
+
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4500);
+        }
+
+        // Handle Booking Submit
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            closeBookingModal();
+            showToast("Appointment Requested", "Thank you! Angel will contact you shortly to confirm your slot.");
+            e.target.reset();
+        }
+
+        // Handle Contact Form Submit
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast("Message Sent", "Thank you for reaching out to Hair By Angel! We'll reply soon.");
+            e.target.reset();
+        }
+
+        // Scroll Reveal Animation Setup
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
